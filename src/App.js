@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Aptitude from './components/Aptitude';
+import Client from './components/Client';
+import Contact from './components/Contact';
+import Experience from './components/Experience';
+import Expertise from './components/Expertise';
+import Footer from './components/Footer';
+import Formation from './components/Formation';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App transition duration-400">
+      <Navbar />
+      <Hero />
+      <Experience />
+      <Formation />
+      <Client />
+      <Aptitude />
+      <Expertise />
+      <Contact />
+      <Footer />
     </div>
   );
 }
